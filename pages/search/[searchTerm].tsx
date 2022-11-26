@@ -85,7 +85,7 @@ const SearchTerm = ({ videos }: { videos: Video[] }) => {
 
 export async function getServerSideProps({ params: { searchTerm } }: { params: { searchTerm: string } }) {
 
-    const res = await axios.get(`http://localhost:3000/api/search/${searchTerm}`);
+    const res = await axios.get(`${process.env.NEXT_PUBLIC_BASE_URL}/api/search/${searchTerm}`);
 
     return {
         props: {

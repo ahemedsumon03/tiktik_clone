@@ -27,10 +27,10 @@ export async function getServerSideProps({ query: { topic } }: { query: { topic:
   let response = null;
 
   if (topic) {
-    response = await axios.get(`http://localhost:3000/api/discover/${topic}`);
+    response = await axios.get(`${process.env.NEXT_PUBLIC_BASE_URL}/api/discover/${topic}`);
   }
   else { 
-    response = await axios.get('http://localhost:3000/api/post');
+    response = await axios.get(`${process.env.NEXT_PUBLIC_BASE_URL}/api/post`);
   }
 
   return {
