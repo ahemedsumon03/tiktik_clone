@@ -47,7 +47,7 @@ const VideoDetails = ({ postDetails }: Iprops) => {
 
     const handleLike = async (like: boolean) => { 
         if (userProfile) { 
-            const res = await axios.put('http://localhost:3000/api/post/like', {
+            const res = await axios.put(`${process.env.NEXT_PUBLIC_BASE_URL}/api/post/like`, {
                 userId: userProfile._id,
                 postId: post._id,
                 like
@@ -63,7 +63,7 @@ const VideoDetails = ({ postDetails }: Iprops) => {
         if (userProfile) { 
             if (comment) { 
                 setIsPostingComment(true);
-                const { data } = await axios.put(`http://localhost:3000/api/post/${post._id}`, {
+                const { data } = await axios.put(`${process.env.NEXT_PUBLIC_BASE_URL}/api/post/${post._id}`, {
                     userId: userProfile?._id,
                     comment,
                 });
