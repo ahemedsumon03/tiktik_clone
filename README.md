@@ -1,6 +1,8 @@
 TikTik
 https://tiktik-clone-zeta.vercel.app
- 
+
+![image](https://user-images.githubusercontent.com/70951184/204263707-d8f1abab-b06e-403e-99d2-5a55371e8a00.png)
+
 
 ### FACE PROBLEM AND ALSO OVERCOME
 In this Project I face problem to google login specially to generate google credential and also to learn GROQ query language. I overcome this in YouTube videos. Also I face some problem to deploy this project in Vercel. I still not fully fit for GROQ query language but I realize that sanity is great cms for develop app especially it reduce many time for developer.
