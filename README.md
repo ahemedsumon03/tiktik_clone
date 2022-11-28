@@ -16,15 +16,25 @@ Build a tiktik app to learn how to login with google and also use first time san
 In this app we can share various kind of video. User who can visit this app without login they can show all kind of video but not able to like and comment on video also not upload video in this app but user who are login they can use every feature in this app. User can see their profile also they can search any video if they are logged in.
 
 ### RUN LOCALLY
+
 •	Run this command git clone https://github.com/ahemedsumon03/tiktik_clone.git
+
 •	Run npm install
+
 •	Run npm run dev
 
 ### TECH STACK
+
 •	Next JS
+
 •	TypeScript
+
 •	Tailwind css
+
 •	Sanity Cms
+
 •	Google api credentials for login with google
+
 •	Zustand (for State management in next js)
+
 •	Vercel (For deploy app) 
